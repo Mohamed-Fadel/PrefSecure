@@ -31,6 +31,24 @@ SecurePref.getInstance().edit()
 SecurePref.getInstance().getLong("accountNumber", 0L);
 ```
 
+# Gradle Dependency
+1. Add the JitPack repository to your build file
+   Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+2. Add the dependency
+```
+dependencies {
+	        compile 'com.github.Mohamed-Fadel:PrefSecure:0.0.2'
+}
+```
+
 # Warning
 - Supports +14 APIs but only encrypt the data for +18 APIs and save it as a `plainText` for APIs < 18
 - Encrypt only the values not the keys.
