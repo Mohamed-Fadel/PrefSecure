@@ -1,7 +1,7 @@
 # PrefSecure
 Android Library For Saving any sensitive Data  (e.g user credentials, passwords, credit cards ,... etc) in cryptographic format
 
-it is useful for rooted device where the hacker can access your `SharedPreferences` easily. So this is a solution to keep your `Data` Safe.
+it is useful for rooted device as the hacker can access your `SharedPreferences` easily. So this is a solution to keep your `Data` Safe.
 
 
 # Usage
@@ -18,7 +18,7 @@ public void onCreate() {
   
 ```
 
-2. Now you can use `SecurePref` Singelton all over the app by just Calling `SecurePref.getInstance()`
+2. Now you can use `SecurePref` Singleton all over the app by just Calling `SecurePref.getInstance()`
 3. The `APIs` of SecurePref is the same as the `SharedPreference` apis. If you want for example set `accountNumber` as 
    a secure data you can do this:
 ```
