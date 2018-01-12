@@ -45,7 +45,7 @@ allprojects {
 2. Add the dependency
 ```
 dependencies {
-	compile 'com.github.Mohamed-Fadel:PrefSecure:0.0.2'
+	compile 'com.github.Mohamed-Fadel:PrefSecure:0.0.3@aar'
 }
 ```
 
