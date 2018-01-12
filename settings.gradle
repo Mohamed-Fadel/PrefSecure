@@ -1,1 +1,1 @@
-include ':app', ':prefsecure'
+include ':prefsecure'
