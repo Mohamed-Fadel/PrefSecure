@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Mohamed-Fadel/PrefSecure.svg)](https://jitpack.io/#Mohamed-Fadel/PrefSecure)
+
 # PrefSecure
 Android Library for saving any Sensitive Data  (e.g user credentials, passwords, credit cards ,... etc) in cryptographic format
 
