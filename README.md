@@ -1,11 +1,11 @@
 # PrefSecure
-Android Library For Saving any sensitive Data  (e.g user credentials, passwords, credit cards ,... etc) in cryptographic format
+Android Library for saving any Sensitive Data  (e.g user credentials, passwords, credit cards ,... etc) in cryptographic format
 
-it is useful for rooted device as the hacker can access your `SharedPreferences` easily. So this is a solution to keep your `Data` Safe.
+It is useful espically in case of rooted device, as the hacker can access your SharedPreferences and reach sensitive data easily. So this is a solution to keep your Data Safe.
 
 
 # Usage
-1. init the `Singleton` in your `Application` Class by adding this line to the `onCreate()` Method in order to provide
+1. Init the `Singleton` in your `Application` Class by adding this line to the `onCreate()` Method in order to provide
    the Application `Context` in which this Singleton will operate.
 ```
 @Override
@@ -50,5 +50,5 @@ dependencies {
 ```
 
 # Warning
-- Supports +14 APIs but only encrypt the data for +18 APIs and save it as a `plainText` for APIs < 18
+- Supports +14 APIs but only encrypt the data for +18 APIs while save it as a `plainText` not encrypted for APIs < 18
 - Encrypt only the values not the keys.
