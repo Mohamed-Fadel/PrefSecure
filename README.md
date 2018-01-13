@@ -1,7 +1,7 @@
 # PrefSecure
 Android Library for saving any Sensitive Data  (e.g user credentials, passwords, credit cards ,... etc) in cryptographic format
 
-It is useful espically in case of rooted device, as the hacker can access your SharedPreferences and reach sensitive data easily. So this is a solution to keep your Data Safe.
+It is useful espically in case of rooted device, as the hacker can access your `SharedPreferences` and reach sensitive data easily. So this is a solution to keep your Data Safe.
 
 
 # Usage
