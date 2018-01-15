@@ -1,11 +1,13 @@
-# PrefSecure
-Android Library For Saving any sensitive Data  (e.g user credentials, passwords, credit cards ,... etc) in cryptographic format
+[![](https://jitpack.io/v/Mohamed-Fadel/PrefSecure.svg)](https://jitpack.io/#Mohamed-Fadel/PrefSecure)
 
-it is useful for rooted device where the hacker can access your `SharedPreferences` easily. So this is a solution to keep your `Data` Safe.
+# PrefSecure
+Android Library for saving any Sensitive Data  (e.g user credentials, access token, credit cards ,... etc) in cryptographic format
+
+It is useful espically in case of rooted device, as the hacker can access your `SharedPreferences` and reach sensitive data easily. So this is a solution to keep your Data Safe.
 
 
 # Usage
-1. init the `Singleton` in your `Application` Class by adding this line to the `onCreate()` Method in order to provide
+1. Init the `Singleton` in your `Application` Class by adding this line to the `onCreate()` Method in order to provide
    the Application `Context` in which this Singleton will operate.
 ```
 @Override
@@ -18,7 +20,7 @@ public void onCreate() {
   
 ```
 
-2. Now you can use `SecurePref` Singelton all over the app by just Calling `SecurePref.getInstance()`
+2. Now you can use `SecurePref` Singleton all over the app by just Calling `SecurePref.getInstance()`
 3. The `APIs` of SecurePref is the same as the `SharedPreference` apis. If you want for example set `accountNumber` as 
    a secure data you can do this:
 ```
@@ -33,7 +35,7 @@ SecurePref.getInstance().getLong("accountNumber", 0L);
 
 # Gradle Dependency
 1. Add the JitPack repository to your build file
-   Add it in your root build.gradle at the end of repositories:
+   Add it in your root `build.gradle` at the end of repositories:
 ```
 allprojects {
 	repositories {
@@ -50,5 +52,5 @@ dependencies {
 ```
 
 # Warning
-- Supports +14 APIs but only encrypt the data for +18 APIs and save it as a `plainText` for APIs < 18
+- Supports +14 APIs but only encrypt the data for +18 APIs while save it as a `plainText` not encrypted for APIs < 18
 - Encrypt only the values not the keys.
