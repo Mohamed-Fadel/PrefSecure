@@ -1,6 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext{
+        supportVersion = '27.0.2'
+        lintVersion = '26.0.1'
+    }
     
     repositories {
         google()
@@ -19,13 +23,6 @@ allprojects {
         jcenter()
     }
 }
-
-ext{
-    supportVersion = "27.0.2"
-}
-
-
-
 
 task clean(type: Delete) {
     delete rootProject.buildDir

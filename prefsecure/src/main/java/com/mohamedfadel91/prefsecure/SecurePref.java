@@ -198,7 +198,7 @@ public class SecurePref implements SharedPreferences {
         }
 
         @Override
-        public SharedPreferences.Editor putString(String key, @Nullable String value) {
+        public SecurePref.Editor putString(String key, @Nullable String value) {
             if (value == null) {
                 remove(key);
                 return this;
@@ -208,7 +208,7 @@ public class SecurePref implements SharedPreferences {
         }
 
         @Override
-        public SharedPreferences.Editor putStringSet(String key, @Nullable Set<String> values) {
+        public SecurePref.Editor putStringSet(String key, @Nullable Set<String> values) {
             if (values == null) {
                 remove(key);
                 return this;
@@ -224,37 +224,37 @@ public class SecurePref implements SharedPreferences {
         }
 
         @Override
-        public SharedPreferences.Editor putInt(String key, int value) {
+        public SecurePref.Editor putInt(String key, int value) {
             editor.putString(key, encryptToString(String.valueOf(value)));
             return this;
         }
 
         @Override
-        public SharedPreferences.Editor putLong(String key, long value) {
+        public SecurePref.Editor putLong(String key, long value) {
             editor.putString(key, encryptToString(String.valueOf(value)));
             return this;
         }
 
         @Override
-        public SharedPreferences.Editor putFloat(String key, float value) {
+        public SecurePref.Editor putFloat(String key, float value) {
             editor.putString(key, encryptToString(String.valueOf(value)));
             return this;
         }
 
         @Override
-        public SharedPreferences.Editor putBoolean(String key, boolean value) {
+        public SecurePref.Editor putBoolean(String key, boolean value) {
             editor.putString(key, encryptToString(String.valueOf(value)));
             return this;
         }
 
         @Override
-        public SharedPreferences.Editor remove(String key) {
+        public SecurePref.Editor remove(String key) {
             editor.remove(key);
             return this;
         }
 
         @Override
-        public SharedPreferences.Editor clear() {
+        public SecurePref.Editor clear() {
             editor.clear();
             return this;
         }
